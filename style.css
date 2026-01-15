@@ -1,0 +1,71 @@
+#formDiv {
+  border: 1px solid black;
+  margin: 10px;
+  padding: 10px;
+  width: max-content;
+  height: max-content;
+}
+
+table,
+th {
+  /* border:1px 0x solid black; */
+  border-bottom: 1px solid black;
+  border-collapse: collapse;
+  padding: 10px;
+  text-align: center;
+}
+
+td {
+  padding: 10px;
+}
+
+/* .split {
+  height: 50%;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.left {
+  top: 0;
+  background-color: ;
+}
+
+.right {
+  bottom: 100;
+  background-color: red;
+} */
+
+
+.container {
+  min-height: 100%;
+}
+
+.top_div {
+  height: 50%;
+  width: 100%;
+  margin: auto;
+}
+
+.bottom_div {
+  height: 50%;
+  width: 100%;
+  margin: auto;
+  text-align: center;
+}
+
+.error {
+    border: 2px solid red;
+}
+
+.success {
+    border: 2px solid green;
+}
+
+.error-msg {
+    color: red;
+    font-size: 12px;
+}

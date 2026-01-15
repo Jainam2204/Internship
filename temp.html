@@ -1,0 +1,187 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Result</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    
+    <div class="top_div" style="border: 1px solid black; margin:10px; padding:10px; width: max-content;">
+        <form id="form">
+            <input type="hidden" id="editIndex" value="">
+
+            <label>Name :</label>
+            <input type="text" id="name"><br><br>
+
+            <label>Roll no :</label>
+            <input type="text" id="rollno"><br><br>
+
+            <label>Class :</label>
+            <select id="class">
+                <option value="1">1</option><option value="2">2</option>
+                <option value="3">3</option><option value="4">4</option>
+                <option value="5">5</option><option value="6">6</option>
+                <option value="7">7</option><option value="8">8</option>
+                <option value="9">9</option><option value="10">10</option>
+                <option value="11">11</option><option value="12">12</option>
+            </select><br><br>
+
+            <label>Subject 1</label>
+            <input type="text" id="sub1"><br><br>
+
+            <label>Subject 2</label>
+            <input type="text" id="sub2"><br><br>
+
+            <label>Subject 3</label>
+            <input type="text" id="sub3"><br><br>
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
+    <h3 style="color:red" id="err"></h3>
+
+    
+    <div style="margin:10px; border:1px solid black; padding:10px;">
+        <h3>Filter Students</h3>
+
+        <label>Name:</label>
+        <input type="text" id="filterName">
+
+        <label>Roll No:</label>
+        <input type="text" id="filterRoll">
+
+        <label>Class:</label>
+        <select id="filterClass">
+            <option value="">All</option>
+            <option value="1">1</option><option value="2">2</option>
+            <option value="3">3</option><option value="4">4</option>
+            <option value="5">5</option><option value="6">6</option>
+            <option value="7">7</option><option value="8">8</option>
+            <option value="9">9</option><option value="10">10</option>
+            <option value="11">11</option><option value="12">12</option>
+        </select>
+
+        <label>Status:</label>
+        <select id="filterStatus">
+            <option value="">All</option>
+            <option value="Pass">Pass</option>
+            <option value="Fail">Fail</option>
+        </select>
+
+        <br><br>
+
+        <button id="applyFilter">Apply Filter</button>
+        <button id="saveFilter">Save Filter (3 hrs)</button>
+        <button id="clearFilter">Clear</button>
+
+        <h4 style="color:red;" id="filterMsg"></h4>
+    </div>
+
+    
+    <div class="bottom_div">
+        <table border="1" id="showTable" style="display:none;">
+            <thead>
+                <tr>
+                    <th>ID</th><th>Name</th><th>Roll No</th><th>Class</th>
+                    <th>Sub 1</th><th>Sub 2</th><th>Sub 3</th>
+                    <th>Average</th><th>Status</th>
+                    <th>Edit</th><th>Delete</th>
+                </tr>
+            </thead>
+            <tbody id="data"></tbody>
+        </table>
+
+        <h3 id="totalStudents"></h3>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html> -->
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Result</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <div class="top_div" style="border: 1px solid black; margin:10px; padding:10px; width: max-content;">
+        <form id="form">
+            <input type="hidden" id="editIndex" value="">
+
+            <label>Name :</label>
+            <input type="text" id="name"><br><br>
+
+            <label>Roll no :</label>
+            <input type="text" id="rollno"><br><br>
+
+            <label>Class :</label>
+            <select id="class">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+            </select><br><br>
+
+            <label>Subject 1</label>
+            <input type="text" id="sub1"><br><br>
+
+            <label>Subject 2</label>
+            <input type="text" id="sub2"><br><br>
+
+            <label>Subject 3</label>
+            <input type="text" id="sub3"><br><br>
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
+    <h3 style="color:red" id="err"></h3>
+
+    <div class="bottom_div">
+        <table border="1" id="showTable" style="display:none;">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Roll No</th>
+                    <th>Class</th>
+                    <th>Subject 1</th>
+                    <th>Subject 2</th>
+                    <th>Subject 3</th>
+                    <th>Average</th>
+                    <th>Status</th>
+                    <th>Edit</th>
+                    <th>Delete</th>
+                </tr>
+            </thead>
+            <tbody id="data"></tbody>
+        </table>
+
+        <h3 id="totalStudents"></h3>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html> -->
