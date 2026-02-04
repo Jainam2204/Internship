@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Student Form</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <button id="logoutBtn">Logout</button>
+            <a href="./addUserPage.html" style="display: none;" id="addStudentLink">Add Users</a>
+
+
+
+    <form id="studentForm">
+        <fieldset>
+            <legend id="formTitle">Add Student</legend>
+
+
+            <label>Name : </label>
+            <input type="text" id="name" required />
+            <br><br>
+            <small style="color:red;" id="namePattern"></small><br><br>
+            <br><br>
+
+            <label>Roll No : </label>
+            <input type="number" id="rollNo" min="1" max="100" required />
+            <br><br>
+
+            <small style="color:red;" id="rollNoPattern"></small><br><br>
+            <br><br>
+
+            <label>Class : </label>
+            <select id="class">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+            </select>
+            <br><br>
+
+            <label>Subject 1 : </label>
+            <input type="number" id="sub1" min="1" max="100" required />
+            <br><br>
+
+            <label>Subject 2 : </label>
+            <input type="number" id="sub2" min="1" max="100" required />
+            <br><br>
+
+            <label>Subject 3 : </label>
+            <input type="number" id="sub3" min="1" max="100" required />
+            <br><br>
+
+            <input type="hidden" id="studentId" />
+
+            <input type="submit" value="Submit" />
+        </fieldset>
+    </form>
+
+    <div id="errorMessage" style="color:red; margin-bottom:10px;"></div>
+
+    <div>
+        <h3 id="tableDetails"></h3>
+        <table id="showStudentTable" style="display:none;">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Roll No</th>
+                    <th>class</th>
+                    <th>Subject 1</th>
+                    <th>Subject 2</th>
+                    <th>Subject 3</th>
+                    <th>Pass/Fail</th>
+                    <th>Avg Marks</th>
+                    <th>Edit</th>
+                    <th>Delete</th>
+                </tr>
+            </thead>
+            <tbody id="showStudentdata"></tbody>
+        </table>
+    </div>
+
+    <script src="./config.js"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>

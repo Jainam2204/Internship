@@ -1,0 +1,45 @@
+table,
+th {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+}
+
+td {
+    padding: 10px;
+}
+
+fieldset {
+    border: 1px solid black;
+    margin: 10px;
+    padding: 10px;
+    width: max-content;
+}
+
+div {
+    text-align: center;
+}
+
+/* .container {
+    min-height: 100%;
+}
+
+.top_div {
+    height: 50%;
+    width: 100%;
+    margin: auto;
+}
+
+.bottom_div {
+    height: 50%;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+
+.error-msg {
+    color: red;
+    font-size: 12px;
+} */

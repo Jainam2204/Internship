@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <title>Add User Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <a href="./index.html">Home Page</a>
+
+    <div class="container">
+
+        <div class="top_div">
+
+            <form id="userForm">
+                <fieldset>
+                    <legend id="formTitle">Add User</legend>
+                    <input type="hidden" id="editUserIndex" value="">
+
+                    <label>Name :</label>
+                    <input type="text" id="userName" required><br><br>
+                    <small style="color:red;" id="namePatternUser"></small><br><br>
+
+
+                    <label>Password</label>
+                    <input type="password" id="password" required><br><br>
+
+                    <label>Email</label>
+                    <input type="email" id="email" required><br><br>
+                    <small style="color:red;" id="emailMatch"></small><br><br>
+
+                    <input type="submit" value="Submit">
+                </fieldset>
+            </form>
+            <h3 style="color:red" id="err"></h3>
+
+
+        </div>
+
+        <div class="bottom_div">
+            <h3 id="totalStudents"></h3>
+
+            <!-- <table id="showStudentsTable" style="display:none;">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Roll No</th>
+                        <th>Class</th>
+                        <th>Subject 1</th>
+                        <th>Subject 2</th>
+                        <th>Subject 3</th>
+                        <th>Average</th>
+                        <th>Status</th>
+                        <th>Edit</th>
+                        <th>Delete</th>
+                    </tr>
+                </thead>
+                <tbody id="studentsData"></tbody>
+            </table> -->
+
+
+            <h3 id="totalUsers"></h3>
+            <table id="showUsersTable" style="display:none;">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Status</th>
+                        <th>Edit</th>
+                        <th>Active/Inactive</th>
+                    </tr>
+                </thead>
+                <tbody id="usersData"></tbody>
+            </table>
+
+        </div>
+    </div>
+
+    <script src="./config.js"></script>
+    <script src="./addUser.js"></script>
+</body>
+
+</html>
